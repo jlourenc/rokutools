@@ -1,0 +1,6 @@
+{
+  "name": "rokutools",
+  "dependencies": {
+    "react": "^15.3.1"
+  }
+}
