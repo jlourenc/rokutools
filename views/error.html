@@ -1,4 +1,9 @@
-Default 404
-
-<h1><%= message %></h1>
-<p><%= error %></p>
+<h1>{{message}}</h1>
+<span>{{status}}</span>
+<div id="error-message-box">
+  <div id="error-stack-trace">
+    <pre>
+      <code>{{error}}</code>
+    </pre>
+  </div>
+</div>

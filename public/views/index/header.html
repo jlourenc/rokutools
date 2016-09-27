@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" data-role="navigation" ng-controller="HeaderController as hdrctr">
+    <div class="page-header">
+        <div class="navbar-header">
+            <div class="logo pull-left">
+                <a class="navbar-brand" ui-sref="home" mean-token="'site-title'">Roku Tools</a>
+            </div>
+            <div class="pull-right">
+                <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" ng-class="!isCollapsed && 'in'">
+            <div class="left pull-right">
+                <ul class="navbar-nav nav">
+                    <li ui-route="/{{item.link}}" ng-class="{active: $uiRoute}" ng-repeat="item in hdrctr.menus.main">
+                        <a mean-token="item.link" ui-sref='{{item.link}}'>{{item.title}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>

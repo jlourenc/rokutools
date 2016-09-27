@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" itemscope="itemscope" itemtype="http://schema.org/Product">
+  {{> head}}
+
+  <body ng-cloak class="ng-cloak" ng-class="state">
+    <div class="navbar navbar-inverse navbar-fixed-top" data-ng-include="'/public/views/index/header.html'" data-role="navigation"></div>
+    <section class="content">
+        <section class="container">
+            {{{body}}}
+        </section>
+    </section>
+    <div class="col-sm-12 footer-container">
+      <footer class="col-sm-8">
+        <p class="col-sm-5 author">
+          © 2016 <a href="https://github.com/jlourenc" rel="author" type="text/html">Jérémy Lourenço</a>
+        </p>
+        <span class="col-sm-2 logo"><img src="/public/img/roku_tools_logo.png" alt="Roku Tools logo" height="32" width="32"></span>
+        <p class="col-sm-5 powered-by">
+          Powered by <a href="http://mean.io/" rel="license" type="text/html">EAN.IO</a>
+        </p>
+      </footer>
+    </div>
+    {{!> foot}}
+  </body>
+
+</html>
