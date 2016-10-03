@@ -21,7 +21,14 @@ function EcpParser () {
 
     this.parseDeviceInfo = function (xml, success) {
         xml2js.Parser().parseString(xml, function (err, result) {
-            success(JSON.stringify(result));
+            var json = {'device-info': {}};
+            var deviceInfo = result['device-info'];
+
+            for (key in deviceInfo) {
+                json['device-info'][key] = deviceInfo[key][0];
+            }
+
+            success(json);
         });
     };
 }
