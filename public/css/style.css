@@ -17,6 +17,19 @@ body {
     border-left: 1px solid #e7e7e7;
   }
 }
+.navbar-inverse .navbar-brand {
+    background-image: url('../img/roku_tools_white_logo.png');
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 30px 32px;
+    color: #fff;
+    padding-left: 55px;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #843abc;
+}
 .navbar-top-links {
   margin-right: 0;
 }
@@ -29,6 +42,14 @@ body {
 .navbar-top-links li a {
   padding: 15px;
   min-height: 50px;
+}
+.navbar-top-links .dropdown-toggle {
+  color: #fff;
+}
+.navbar-top-links .dropdown-toggle:hover,
+.navbar-top-links .open>a,
+.navbar-top-links .open>a:focus {
+  background-color: #843abc;
 }
 .navbar-top-links .dropdown-menu li {
   display: block;
@@ -105,6 +126,16 @@ body {
   .navbar-top-links .dropdown-tasks,
   .navbar-top-links .dropdown-alerts {
     margin-left: auto;
+  }
+}
+.copyright {
+    font-size: 12px;
+    padding: 15px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+  .copyright {
+      display: none;
   }
 }
 .btn-outline {
